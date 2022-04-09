@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION 5</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container ul {
+            display: flex;
+        }
+        .container ul li {
+            list-style: none;
+            background-color: white;
+            width: 250px;
+            height: 250px;
+            margin: 0 5px;
+            border-radius: 5px;
+
+            animation-name: image;
+            animation-duration: 5s;
+            animation-iteration-count: 1; 
+        }
+        @keyframes image {
+            from {
+                height: 0px;
+            }
+            to {
+                height: 250px;
+            }
+        }
+        .container ul li:nth-child(1){
+            background-image: url(image1.png); 
+        }
+        .container ul li:nth-child(2){
+            background-image: url(image2.jpg);   
+        }
+        .container ul li:nth-child(3){
+            background-image: url(image3.jpg);
+        }
+        .container ul li:nth-child(4){
+            background-image: url(image4.jpg);
+        }
+        .container ul li:nth-child(5){
+            background-image: url(image5.jpg);
+        }
+        a {
+            display: flex;
+            color: white;
+            width: 250px;
+            height: 250px;
+        }
+        .length {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="https://www.google.com"></a></li>
+            <li><a href="https://www.google.com"></a></li>
+            <li><a href="https://www.google.com"></a></li>
+            <li><a href="https://www.google.com"></a></li>
+            <li><a href="https://www.google.com"></a></li>
+        </ul>
+    </div>
+    <div class="length"></div>
+</body>
+</html>
